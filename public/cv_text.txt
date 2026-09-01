@@ -1,0 +1,96 @@
+=== PAGE 1 ===
+IQRASH AHMAD
+Full Stack Developer
+ +92 319 8843589 | « +92 349 8602495 | # iqrashahmad218@gmail.com
+ï LinkedIn | § GitHub
+* Lahore, Punjab, Pakistan
+PROFESSIONAL SUMMARY
+Results-driven React Native and Full Stack Developer with 2 years of hands-on experience in designing, developing, and
+maintaining scalable web and mobile applications. Proﬁcient in React, React Native, Expo, Next JS, Laravel framework,
+Python, RESTful API integration, and AI/ML integration (OpenAI API, NLP-based features, intelligent automation). Strong
+expertise in JavaScript, MySQL, and performance optimization, with a proven ability to deliver high-quality, user-focused
+solutions in fast-paced development environments. Actively seeking challenging opportunities (remote or onsite) to
+leverage technical expertise and contribute to innovative, growth-oriented projects.
+TECHNICAL SKILLS
+Backend Development: Laravel, SQL, GraphQL, PHP, RESTful APIs, API Integration, Django
+Frontend Development: JavaScript (ES6+), React.js, Python, FastAPI, Next.js, HTML5, CSS3, Bootstrap, Tailwind CSS,
+Responsive Design, Cross-Browser Compatibility, UI/UX Optimization
+AI/ML & Data: OpenAI API Integration, NLP Fundamentals, Basic ML Algorithms (Linear Regression, Classiﬁcation),
+Prompt Engineering, AI-Powered Feature Development
+Tools & Technologies: Git, GitHub, GitLab, Version Control, Agile/Scrum, Postman
+Additional Skills: Performance Optimization, Problem Solving, Code Review, Testing & Debugging
+PROFESSIONAL EXPERIENCE
+Full Stack Web Developer
+November 2023 – Present
+WebsCare
+• Designed, developed, and maintained scalable full-stack web and mobile applications using React, React Native,
+Expo, Laravel, and modern JavaScript frameworks
+• Built secure, scalable, and well-documented RESTful APIs to enable seamless frontend–backend communication
+• Developed cross-platform mobile applications using React Native and Expo, ensuring smooth performance and
+consistent UI across Android and iOS
+• Integrated third-party APIs and services, including AI/ML-powered features (e.g., OpenAI API) to enhance
+application functionality and improve user engagement
+• Collaborated with cross-functional teams to gather requirements, design technical solutions, and deliver projects
+within tight deadlines
+• Optimized application performance through code refactoring, database query optimization, and industry best
+practices, reducing load times
+• Utilized Git for version control to manage feature branches, pull requests, and production releases efﬁciently
+• Implemented responsive, accessible web interfaces and mobile-friendly designs, ensuring compatibility across
+Chrome, Firefox, Safari, and Edge
+• Diagnosed and resolved complex production issues, improving application reliability, stability, and user experience
+Freelance Web Developer
+2021 – 2023
+Self-Employed
+• Designed and developed custom web solutions for local and international clients, delivering production-ready
+applications
+• Built a complete POS and Sales Management System for LahoreShoes, including inventory management, billing,
+and sales reporting modules
+• Developed a service-based business website and admin panel for Sania Salon, enabling appointment scheduling,
+content management, and admin control
+• Implemented secure authentication, role-based access control, and database-driven workﬂows
+• Worked directly with clients to gather requirements, provide technical guidance, and deliver solutions aligned with
+business goals
+• Handled deployment, maintenance, and post-launch support, ensuring long-term system stability and performance
+=== PAGE 2 ===
+PROJECTS
+Web & Mobile Applications Development: Developed multiple production-level web and mobile applications featuring
+custom modules, dashboards, and API integrations. Key projects include UrduFonts.com (multilingual Urdu fonts
+platform), DubaiCruise.com (tour and cruise booking system), and WatchNews Pro (live news and streaming platform with
+mobile support using React Native and Expo). Built dynamic user interfaces, automated workﬂows, user management
+systems, and real-time content updates. Implemented optimized database queries, role-based access control (ACL),
+caching strategies, and performance enhancements across applications.
+AI-Powered Application Features: Integrated OpenAI API and NLP-based capabilities into web applications to deliver
+intelligent features such as automated content generation, smart query handling, and context-aware response systems.
+Applied basic machine learning concepts (classiﬁcation, regression) in Python-based academic and personal projects to
+explore data-driven decision making.
+AI Study Helper: Built an AI-based study assistant using Python that helps students understand concepts, generate
+answers, and assist with academic queries. Integrated NLP techniques and external APIs (OpenAI API) to provide
+accurate, context-aware responses, simulating an intelligent tutoring system.
+API Testing Tool (FastAPI): Developed a Postman-like API request and testing tool using Python and FastAPI, enabling
+users to send HTTP requests, view responses, and test REST endpoints. Implemented support for multiple request
+methods, headers, and request bodies to streamline API development and debugging workﬂows.
+Custom Store & E-Commerce Development: Designed and developed high-performing e-commerce stores using Shopify
+with custom themes, reusable sections, dynamic metaﬁelds, product badges, and automated layouts. Enhanced user
+experience, optimized page speed, and delivered scalable front-end solutions for online businesses, including
+DropoutsOfﬁcial.com and brand-focused Shopify stores.
+Corporate & Business Platforms: Built modern corporate and ﬁnancial websites such as hqafund.org using React (Vite)
+and API-driven architectures. Implemented secure forms, admin dashboards, server-side validation, and SEO optimizations
+to improve visibility, security, and performance.
+Management Dashboards & Admin Portals: Developed internal business management dashboards for inventory tracking,
+sales reporting, and user management using Laravel, JavaScript, and MySQL. Automated workﬂows reduced manual
+processing time by up to 60%. Delivered secure admin–client portals with REST API integrations, optimized databases, and
+role-based authentication.
+Team Collaboration & Delivery: Worked within Agile development environments, actively participating in sprint planning,
+code reviews, and Git-based version control to ensure high-quality deliverables, timely releases, and effective cross-team
+collaboration.
+EDUCATION
+University of Sargodha
+Bachelor of Science in Information Technology
+2020 – 2024
+Superior College
+FSc Pre-Engineering
+2018 – 2020
+ADDITIONAL INFORMATION
+Languages: English (Fluent), Urdu (Native)
+Availability: Open to remote and onsite opportunities
+Work Authorization: Authorized to work in Pakistan

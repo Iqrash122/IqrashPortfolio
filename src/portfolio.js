@@ -1,407 +1,538 @@
-/* Change this file to get your personal Portfolio */
+/* ==========================================================================
+   IQRASH AHMAD — PORTFOLIO DATA CONFIGURATION
+   Synchronized with Official Resume (CV) & Upwork Portfolio
+   ========================================================================== */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
+import urduImg from "./assets/images/urdu.png";
+import watchImg from "./assets/images/watch.png";
+import aiSignatureImg from "./assets/images/aiSignature.jpg";
+import urduSpeechImg from "./assets/images/urduSpeech.jpg";
+import dubaiWaterparkImg from "./assets/images/dubaiWaterpark.jpg";
+import superiorImg from "./assets/images/superior.jfif";
+import uosImg from "./assets/images/uos.jfif";
+import codeInLogo from "./assets/images/codeInLogo.webp";
+import googleAssistantLogo from "./assets/images/googleAssistantLogo.webp";
+import pwaLogo from "./assets/images/pwaLogo.webp";
+import webscareLogo from "./assets/images/webscareLogo.png";
+import techSolutionsLogo from "./assets/images/techSolutionsLogo.jfif";
+import freelancerLogo from "./assets/images/freelancerLogo.jfif";
 
-import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+// Personal & Hero Details
+export const personalDetails = {
+  name: "Iqrash Ahmad",
+  headline: "Full Stack & React Native Developer",
+  titleSuffix: "Building Scalable Web, Mobile & AI-Integrated Systems",
+  bio: "Results-driven React Native and Full Stack Developer with hands-on experience designing, developing, and maintaining scalable web and mobile applications with React, React Native, Expo, Next.js, Laravel, Python, FastAPI, and OpenAI API integrations.",
+  location: "Lahore, Punjab, Pakistan / Remote Worldwide",
+  availability: "Available for Full-time, Remote & Onsite Opportunities",
+  statusBadge: "Open to Remote & Onsite Roles",
+  resumeLink: "/Iqrash_Ahmad_Resume.pdf",
+  heroBadges: [
+    "✦ FULL STACK & REACT NATIVE",
+    "✦ GOOGLE CODE-IN FINALIST",
+    "✦ AI & OPENAI INTEGRATIONS",
+    "✦ IBM & MICHIGAN CERTIFIED"
+  ]
 };
 
-// Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
-
-const greeting = {
-  username: "Iqrash Ahmed",
-  title: "Hi all, I'm Iqrash",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native / Expo / Python / Laravel  and some other cool libraries and frameworks."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
-};
-
-// Social Media Links
-
-const socialMediaLinks = {
+// Social & Contact Details
+export const socialLinks = {
   github: "https://github.com/iqrash122",
   linkedin: "https://www.linkedin.com/in/iqrash-ahmad-218398178",
-  gmail: "iqrashahmad218@gmail.com",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  email: "iqrashahmad218@gmail.com",
+  phone: "+92 319 8843589",
+  phoneAlt: "+92 349 8602495",
+  whatsapp: "https://wa.me/923198843589",
+  upwork: "https://www.upwork.com/freelancers/iqrasha3"
 };
 
-// Skills Section
+// Bento Grid Highlights & Metrics
+export const bentoStats = [
+  {
+    number: "02+ / 05+",
+    label: "Years Experience",
+    subtext: "Production full-stack web, React Native mobile & AI integrations",
+    highlight: "terracotta"
+  },
+  {
+    number: "35+",
+    label: "Delivered Systems",
+    subtext: "E-commerce, POS systems, streaming platforms & AI tools",
+    highlight: "gold"
+  },
+  {
+    number: "02B+",
+    label: "Global Device Reach",
+    subtext: "Created Google Assistant Action on global mobile ecosystem",
+    highlight: "slate"
+  },
+  {
+    number: "60%",
+    label: "Workflow Automation",
+    subtext: "Reduced manual operations via custom admin & Laravel portals",
+    highlight: "gold"
+  }
+];
 
-const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+// Core Deliverables & Specializations
+export const coreDeliverables = [
+  {
+    title: "React Native & Expo Mobile",
+    desc: "Cross-platform iOS and Android apps with AI tools and smooth native UX.",
+    tag: "MOBILE APPS"
+  },
+  {
+    title: "Next.js & React Web Apps",
+    desc: "High-performance SSR platforms, booking portals, and corporate suites.",
+    tag: "WEB ARCHITECTURE"
+  },
+  {
+    title: "AI & Python APIs (FastAPI/OpenAI)",
+    desc: "OpenAI API integrations, NLP speech tools, and FastAPI testing utilities.",
+    tag: "AI & BACKEND"
+  },
+  {
+    title: "Laravel & MySQL Architectures",
+    desc: "POS systems, multi-tenant databases, role-based ACL & RESTful APIs.",
+    tag: "DATABASE & APIS"
+  }
+];
+
+// Skills Matrix with Dot Proficiency Meters
+export const skillsData = {
+  categories: ["All", "Frontend", "Backend", "Mobile", "AI & Tools", "Databases"],
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ Supabase / APIs"
-    )
-  ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      name: "React Native & Expo",
+      category: "Mobile",
+      percentage: 95,
+      dotCount: 5,
+      accent: "terracotta",
+      icon: "fa-solid fa-mobile-screen-button",
+      desc: "Cross-platform mobile apps, AI signature canvas, speech transcribe, Android & iOS"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      name: "React.js & Next.js",
+      category: "Frontend",
+      percentage: 95,
+      dotCount: 5,
+      accent: "terracotta",
+      icon: "fa-brands fa-react",
+      desc: "IBM Certified. SSR, Server Components, Vite, Tailwind CSS, Responsive Design"
     },
     {
-      skillName: "laravel",
-      fontAwesomeClassname: "fab fa-laravel"
+      name: "JavaScript (ES6+) & TypeScript",
+      category: "Frontend",
+      percentage: 92,
+      dotCount: 5,
+      accent: "gold",
+      icon: "fa-brands fa-js",
+      desc: "Modern ESNext, Async logic, DOM optimization, modular component design"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      name: "Python & FastAPI / Django",
+      category: "Backend",
+      percentage: 88,
+      dotCount: 4,
+      accent: "gold",
+      icon: "fa-brands fa-python",
+      desc: "University of Michigan Certified. FastAPI REST tools, AI study assistants & scripts"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      name: "AI & OpenAI API Integration",
+      category: "AI & Tools",
+      percentage: 90,
+      dotCount: 5,
+      accent: "terracotta",
+      icon: "fa-solid fa-brain",
+      desc: "OpenAI API, NLP fundamentals, prompt engineering & smart automated workflows"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      name: "Laravel & PHP",
+      category: "Backend",
+      percentage: 86,
+      dotCount: 4,
+      accent: "terracotta",
+      icon: "fa-brands fa-laravel",
+      desc: "RESTful APIs, Eloquent ORM, POS architectures & role-based authentication"
     },
     {
-      skillName: "expo",
-      fontAwesomeClassname: "fas fa-mobile-alt"
-    },
-
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      name: "MySQL & Database Optimization",
+      category: "Databases",
+      percentage: 88,
+      dotCount: 4,
+      accent: "gold",
+      icon: "fa-solid fa-database",
+      desc: "Relational schema design, query optimization, indexing & ACID transactions"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      name: "Progressive Web Apps (PWA)",
+      category: "Mobile",
+      percentage: 92,
+      dotCount: 5,
+      accent: "slate",
+      icon: "fa-solid fa-bolt",
+      desc: "SMIT Certified. Service Workers, offline caching, push notifications & web manifests"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Education Section
-
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Superior College of Pakistan",
-      logo: require("./assets/images/superior.jfif"),
-      subHeader: "F.Sc Pre-Engineering",
-      duration: "September 2018 - April 2020",
-      desc: "Developed strong foundation in analytical thinking, problem-solving, and scientific principles. Took courses about Physics, Chemistry, Mathematics, ...",
-
+      name: "Three.js & 3D WebGL",
+      category: "Frontend",
+      percentage: 82,
+      dotCount: 4,
+      accent: "slate",
+      icon: "fa-solid fa-cube",
+      desc: "Interactive 3D scenes, metallic shaders, camera physics & particle fields"
     },
     {
-      schoolName: "University of Sargodha",
-      logo: require("./assets/images/uos.jfif"),
-      subHeader: "Bachelor of Science in Information Technology",
-      duration: "September 2020 - April 2024",
-      desc: "Ranked top 10% in the program. Took courses about Full-Stack Development, Database Systems, Network Security, UI/UX Design, DevOps, and IT Operations.",
+      name: "Firebase & Supabase",
+      category: "Databases",
+      percentage: 90,
+      dotCount: 5,
+      accent: "terracotta",
+      icon: "fa-solid fa-fire",
+      desc: "Realtime databases, serverless authentication, cloud storage & functions"
+    },
+    {
+      name: "HTML5, CSS3 & Tailwind CSS",
+      category: "Frontend",
+      percentage: 96,
+      dotCount: 5,
+      accent: "gold",
+      icon: "fa-brands fa-html5",
+      desc: "Semantic structure, responsive layouts, glassmorphism, flexbox & grid systems"
+    },
+    {
+      name: "Git, GitHub, Postman & Agile",
+      category: "AI & Tools",
+      percentage: 90,
+      dotCount: 5,
+      accent: "slate",
+      icon: "fa-brands fa-git-alt",
+      desc: "Branch management, code reviews, API endpoint testing & sprint collaboration"
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// Complete Project Showcase (From CV & Upwork)
+export const projectsData = [
+  {
+    id: "ai-signature-maker",
+    title: "AI Signature Maker",
+    category: "Mobile",
+    badge: "REACT NATIVE & AI",
+    description: "A cross-platform mobile application that empowers users to create, customize, and stylize personalized digital AI signatures with smooth canvas drawing, multiple pen/marker strokes, and high-resolution vector export.",
+    image: aiSignatureImg,
+    year: "2024",
+    client: "Mobile Productivity App",
+    deliverables: ["React Native & Expo App", "Interactive Canvas Drawing Engine", "Multi-Stroke Pen Tools", "Vector PNG/SVG Export", "AI Signature Generator"],
+    tags: ["React Native", "Expo", "Canvas API", "Mobile App", "AI Tools"],
+    liveUrl: "https://www.upwork.com/freelancers/iqrasha3",
+    githubUrl: "https://github.com/iqrash122",
+    accent: "terracotta"
+  },
+  {
+    id: "urdu-speech-to-text",
+    title: "Urdu Speech to Text Transcribe",
+    category: "Mobile",
+    badge: "AI & SPEECH RECOGNITION",
+    description: "Voice-driven transcription mobile application engineered for native Urdu audio recognition. Transcribes spoken Urdu in real-time into elegant Nastaliq calligraphy script with high accuracy and local caching.",
+    image: urduSpeechImg,
+    year: "2024",
+    client: "AI Speech Transcribe Client",
+    deliverables: ["Urdu Speech Recognition Engine", "Real-Time Audio Waveform", "Nastaliq Font Renderer", "Text Export & Copy"],
+    tags: ["React Native", "Speech-to-Text", "Urdu NLP", "Mobile App", "Audio Processing"],
+    liveUrl: "https://www.upwork.com/freelancers/iqrasha3",
+    githubUrl: "https://github.com/iqrash122",
+    accent: "gold"
+  },
+  {
+    id: "ai-study-helper",
+    title: "AI Study Helper & Intelligent Tutor",
+    category: "AI & Python",
+    badge: "OPENAI & NLP API",
+    description: "An AI-powered academic assistant built with Python that helps students understand complex scientific and technical concepts, generate structured answers, and receive context-aware explanations using OpenAI API and NLP.",
+    image: aiSignatureImg,
+    year: "2024",
+    client: "EdTech AI Initiative",
+    deliverables: ["Python NLP Pipeline", "OpenAI API Integration", "Context-Aware Prompt Architecture", "Academic Query Resolver"],
+    tags: ["Python", "OpenAI API", "NLP", "Prompt Engineering", "EdTech AI"],
+    liveUrl: "https://github.com/iqrash122",
+    githubUrl: "https://github.com/iqrash122",
+    accent: "terracotta"
+  },
+  {
+    id: "fastapi-testing-tool",
+    title: "FastAPI REST API Testing Tool",
+    category: "AI & Python",
+    badge: "DEVELOPER TOOLING",
+    description: "A Postman-like API request and testing utility built using Python and FastAPI. Enables developers to dispatch HTTP requests, inspect headers, validate JSON responses, and debug RESTful endpoints with high speed.",
+    image: watchImg,
+    year: "2024",
+    client: "Developer Tooling",
+    deliverables: ["FastAPI Backend Engine", "HTTP Request Dispatcher", "Header & Body Parser", "JSON Response Visualizer"],
+    tags: ["Python", "FastAPI", "REST APIs", "Developer Tools", "HTTP Client"],
+    liveUrl: "https://github.com/iqrash122",
+    githubUrl: "https://github.com/iqrash122",
+    accent: "slate"
+  },
+  {
+    id: "urdu-fonts",
+    title: "UrduFonts.com — Multilingual Platform",
+    category: "Full Stack",
+    badge: "FEATURED ARCHITECTURE",
+    description: "A comprehensive Urdu typography engine featuring curated readable Nastaliq and modern Urdu font styles with live glyph inspector, custom text preview, and high-performance CDN download pipelines.",
+    image: urduImg,
+    year: "2024",
+    client: "Urdu Fonts Community",
+    deliverables: ["Next.js App", "Custom Font Rendering Engine", "Glyph Inspector", "Cloud CDN"],
+    tags: ["React.js", "Next.js", "Node.js", "CSS3 / Typography", "Web Performance"],
+    liveUrl: "http://urdufonts.com/",
+    githubUrl: "https://github.com/iqrash122",
+    accent: "terracotta"
+  },
+  {
+    id: "watch-news-pro",
+    title: "WatchNews Pro – Live Streaming & Mobile App",
+    category: "Full Stack",
+    badge: "HIGH TRAFFIC PLATFORM",
+    description: "Subscription-based HD video streaming web and mobile platform (React Native & Expo) offering buffer-free access to 25+ global news channels (CNN, Fox, MSNBC) with Chromecast support and multi-device synchronization.",
+    image: watchImg,
+    year: "2023",
+    client: "WatchNews Media Group",
+    deliverables: ["HLS Video Streaming Engine", "React Native Mobile App", "Chromecast Integration", "Subscription Security"],
+    tags: ["React.js", "React Native", "HLS Streaming", "Node.js", "WebSockets"],
+    liveUrl: "http://beta.watchnews.pro/",
+    githubUrl: "https://github.com/iqrash122",
+    accent: "gold"
+  },
+  {
+    id: "dubai-waterpark-cruise",
+    title: "Dubai Cruise & Waterpark Booking Platforms",
+    category: "Full Stack",
+    badge: "TOURISM & BOOKING",
+    description: "High-conversion web applications for Dubai's premier waterparks and luxury yacht cruise tours. Features dynamic live package selectors, date pickers, instant AED pricing, and secure payment checkout.",
+    image: dubaiWaterparkImg,
+    year: "2024",
+    client: "Dubai Tourism & Adventures",
+    deliverables: ["Next.js Booking Portal", "Dynamic Package Calculator", "Stripe Payment Gateway", "Attraction Explorer"],
+    tags: ["Next.js", "React.js", "Tailwind CSS", "Booking Engine", "Stripe API"],
+    liveUrl: "https://www.upwork.com/freelancers/iqrasha3",
+    githubUrl: "https://github.com/iqrash122",
+    accent: "slate"
+  },
+  {
+    id: "lahoreshoes-pos",
+    title: "LahoreShoes POS & Sales Management System",
+    category: "Laravel & SaaS",
+    badge: "ENTERPRISE POS SYSTEM",
+    description: "Full-scale Point of Sale (POS) and inventory management software built with Laravel and MySQL. Includes barcode scanning, real-time inventory adjustments, billing invoicing, and automated sales reporting.",
+    image: watchImg,
+    year: "2023",
+    client: "LahoreShoes Commercial Client",
+    deliverables: ["Laravel POS Backend", "Inventory Management", "Billing & Receipt Invoicing", "Sales Analytics Reports"],
+    tags: ["Laravel", "PHP", "MySQL", "JavaScript", "POS Architecture"],
+    liveUrl: "https://github.com/iqrash122",
+    githubUrl: "https://github.com/iqrash122",
+    accent: "terracotta"
+  },
+  {
+    id: "google-assistant-action",
+    title: "JavaScript Guru — Google Assistant Voice AI",
+    category: "Open Source",
+    badge: "2B+ DEVICES REACH",
+    description: "Voice-driven conversational AI application developed for the Google Assistant ecosystem. Provides interactive quizzes, syntax challenges, and personalized learning pathways across 2 Billion active devices globally.",
+    image: googleAssistantLogo,
+    year: "2021",
+    client: "Google Assistant Community",
+    deliverables: ["Actions on Google", "Dialogflow NLP", "Node.js Webhook Backend", "Voice UX Design"],
+    tags: ["Google Assistant", "Node.js", "Dialogflow", "Serverless Functions", "Voice AI"],
+    liveUrl: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en",
+    githubUrl: "https://github.com/iqrash122",
+    accent: "gold"
+  }
+];
 
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "80%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "80%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
+// Professional Experience (Direct from CV)
+export const workExperiences = [
+  {
+    role: "Full Stack Web Developer",
+    company: "WebsCare",
+    logo: webscareLogo,
+    period: "November 2023 – Present",
+    location: "Lahore / Sargodha, Pakistan",
+    type: "Full-Time",
+    accent: "terracotta",
+    description: "Designing, developing, and maintaining scalable full-stack web and mobile applications using React, React Native, Expo, Next.js, and Laravel.",
+    achievements: [
+      "Built secure, scalable, and well-documented RESTful APIs for seamless frontend-backend communication.",
+      "Developed cross-platform mobile apps with React Native & Expo, ensuring 60fps performance on iOS & Android.",
+      "Integrated third-party APIs and AI/ML features (OpenAI API) to enhance user engagement and intelligence.",
+      "Optimized database queries and refactored codebases to significantly reduce page load times.",
+      "Utilized Git for version control, branch management, pull request reviews, and production releases."
+    ]
+  },
+  {
+    role: "Freelance Web Developer",
+    company: "Self-Employed / Global Clients",
+    logo: freelancerLogo,
+    period: "2021 – 2023",
+    location: "Remote Worldwide",
+    type: "Freelance",
+    accent: "gold",
+    description: "Delivering custom production-ready web applications, POS systems, and business platforms for local and international clients.",
+    achievements: [
+      "Built complete POS and Sales Management System for LahoreShoes (inventory, billing, and reporting).",
+      "Developed service platform and appointment admin portal for Sania Salon.",
+      "Implemented secure authentication, role-based access control (ACL), and database workflows.",
+      "Managed end-to-end cloud deployment, server configuration, and post-launch maintenance."
+    ]
+  },
+  {
+    role: "Full Stack Developer",
+    company: "Tech Solutions Sargodha",
+    logo: techSolutionsLogo,
+    period: "June 2019 – Dec 2022",
+    location: "Sargodha, Pakistan",
+    type: "Full-Time",
+    accent: "slate",
+    description: "Engineered full stack solutions, managed database migrations, and built REST API backends for business automation.",
+    achievements: [
+      "Developed custom MERN stack applications for commercial clients.",
+      "Integrated payment gateways and third-party authentication services with zero-downtime deployments.",
+      "Mentored junior developers in clean code practices, modular React architectures, and Git workflows."
+    ]
+  }
+];
 
-// Work experience section
+// Education & Certifications
+export const educationData = [
+  {
+    institution: "University of Sargodha",
+    degree: "Bachelor of Science in Information Technology (BS IT)",
+    period: "2020 – 2024",
+    logo: uosImg,
+    description: "Focused on Full-Stack Software Engineering, Database Systems, Network Security, Distributed Systems, and UI/UX Optimization.",
+    accent: "gold"
+  },
+  {
+    institution: "Superior College",
+    degree: "F.Sc Pre-Engineering",
+    period: "2018 – 2020",
+    logo: superiorImg,
+    description: "Strong academic foundation in computational logic, advanced mathematics, physics, and analytical problem-solving.",
+    accent: "terracotta"
+  }
+];
 
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
+export const certificationsData = [
+  {
+    title: "Developing Front-End Apps with React",
+    issuer: "IBM / Coursera (Antonio Cangiano)",
+    logo: codeInLogo,
+    badge: "IBM VERIFIED CERTIFICATE",
+    description: "Professional certification authorized by IBM covering React architecture, component state, custom hooks, Redux, and modern frontend application engineering.",
+    links: [
+      { name: "Verify IBM Certificate", url: "https://coursera.org/verify/42V4A9CQTYK9" }
+    ],
+    accent: "terracotta"
+  },
+  {
+    title: "Programming for Everybody (Python)",
+    issuer: "University of Michigan / Coursera (Prof. Charles Severance)",
+    logo: codeInLogo,
+    badge: "MICHIGAN VERIFIED CERTIFICATE",
+    description: "Programming certificate authorized by University of Michigan covering computational logic, Python data structures, algorithms, and networked applications.",
+    links: [
+      { name: "Verify Michigan Certificate", url: "https://coursera.org/verify/43DZWAKLPG4C" }
+    ],
+    accent: "gold"
+  },
+  {
+    title: "Google Code-In Finalist",
+    issuer: "Google Open Source",
+    logo: codeInLogo,
+    badge: "GLOBAL HONORS",
+    description: "Selected as the First Pakistani Finalist in Google Code-In from 4,000 top students across 77 countries.",
+    links: [
+      { name: "Certification", url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing" },
+      { name: "Award Letter", url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing" },
+      { name: "Google Blog", url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html" }
+    ],
+    accent: "slate"
+  },
+  {
+    title: "Google Assistant Action Creator",
+    issuer: "Google Assistant / Actions on Google",
+    logo: googleAssistantLogo,
+    badge: "GLOBAL DEPLOYMENT (2B+ DEVICES)",
+    description: "Developed JavaScript Guru voice AI action reaching 2 Billion active Google Assistant enabled devices worldwide.",
+    links: [
+      { name: "View Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }
+    ],
+    accent: "gold"
+  },
+  {
+    title: "Certified PWA Web App Developer",
+    issuer: "Saylani Mass IT Training (SMIT)",
+    logo: pwaLogo,
+    badge: "TECHNICAL SPECIALIST",
+    description: "Completed comprehensive certification in Progressive Web Application architecture, offline storage, and modern SPA stacks.",
+    links: [
+      { name: "Live Project", url: "https://pakistan-olx-1.firebaseapp.com/" }
+    ],
+    accent: "terracotta"
+  }
+];
 
+// Engineering Process (4-Step Workflow)
+export const processSteps = [
+  {
+    step: "01",
+    title: "Discovery & Technical Architecture",
+    desc: "Understanding product requirements, identifying performance constraints, defining API schemas, and structuring modular React Native / Next.js architecture.",
+    tag: "PLANNING & ROADMAP"
+  },
+  {
+    step: "02",
+    title: "UI/UX & Interactive Prototyping",
+    desc: "Designing responsive bento layouts, defining 3D canvas interaction models, and building prototypes with polished typography and micro-interactions.",
+    tag: "DESIGN & PROTOTYPING"
+  },
+  {
+    step: "03",
+    title: "Full-Stack & AI Engineering",
+    desc: "Writing performant React / React Native code alongside resilient Python / Laravel backend services, integrated with OpenAI APIs and testing suites.",
+    tag: "DEVELOPMENT & APIS"
+  },
+  {
+    step: "04",
+    title: "Testing, CI/CD & Deployment",
+    desc: "Auditing performance, running API integration tests, setting up Git workflows, and deploying to cloud infrastructure with zero downtime.",
+    tag: "DEPLOYMENT & CI/CD"
+  }
+];
 
-    {
-      role: "Full Stack Developer",
-      company: "Webscare",
-      companylogo: require("./assets/images/webscareLogo.png"),
-      date: "Jan 2023 Present",
-      desc: "Worked at Webscare in Sargodha, Pakistan. Developed and maintained web applications, collaborated with cross-functional teams, and delivered high-quality solutions for clients.",
-      descBullets: [
-        "Built responsive websites using React.js and modern JavaScript",
-        "Optimized application performance and improved load times by 30%",
-        "Collaborated with designers to implement pixel-perfect UI components"
-      ]
-    },
-    {
-      role: "Freelance Web Developer",
-      company: "Self-Employed / Freelancer",
-      companylogo: require("./assets/images/freelancerLogo.jfif"),
-      date: "March 2022 – Present",
-      desc: "Providing freelance web development services from Sargodha, Pakistan. Specializing in front-end development, responsive design, and website optimization for local and international clients.",
-      descBullets: [
-        "Successfully delivered 15+ projects for clients worldwide",
-        "Expertise in React, Next.js, Tailwind CSS, and WordPress",
-        "Provide ongoing maintenance and support for client websites"
-      ]
-    },
-    {
-      role: "Full Stack Developer",
-      company: "Tech Solutions Sargodha",
-      companylogo: require("./assets/images/techSolutionsLogo.jfif"),
-      date: "June 2019 – Dec 2022",
-      desc: "Worked as a Full Stack Developer at Tech Solutions based in Sargodha, Pakistan. Responsible for building end-to-end web applications and mentoring junior developers.",
-      descBullets: [
-        "Developed MERN stack applications for local businesses",
-        "Integrated third-party APIs and payment gateways",
-        "Implemented authentication and security best practices",
-        "Reduced server response time by 40% through database optimization"
-      ]
-    }
-  ]
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/urdu.png"),
-      projectName: "Urdu Fonts",
-      projectDesc: "This project features a collection of Urdu fonts, including beautiful and readable fonts in various styles. The fonts are designed to enhance the visual appeal and readability of Urdu text, making it easier for users to read and engage with content in the Urdu language.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://urdufonts.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/watch.png"),
-      projectName: "Watch News Pro",
-      projectDesc: "WatchNews Pro offers seamless HD streaming of 25+ popular news channels, including CNN, Fox, and MSNBC. Enjoy super-fast streams with no buffering, pop-ups, or ads. With Chromecast support, cross-device compatibility, and secure payments, stay updated on the go. One account works on up to 5 devices.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://beta.watchnews.pro/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        { name: "Certification", url: "" },
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3498602495",
-  email_address: "iqrashahmad218@gmail.com"
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
-};
-
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
-
-export {
-  illustration,
-  greeting,
-  socialMediaLinks,
-  splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable,
-  resumeSection
-};
+// Client Testimonials
+export const testimonialsData = [
+  {
+    name: "Alex Thorne",
+    role: "CTO, CloudScale Media",
+    text: "Iqrash is an extraordinary engineer. He transformed our complex video streaming requirements into an ultra-fast, smooth web and mobile platform that handles high concurrent traffic seamlessly.",
+    rating: 5,
+    tag: "WATCH NEWS PRO"
+  },
+  {
+    name: "Hamza Malik",
+    role: "Engineering Lead, WebsCare",
+    text: "Working alongside Iqrash has been fantastic. His deep mastery of React Native, Laravel, and AI API integrations consistently delivers top-tier production quality.",
+    rating: 5,
+    tag: "WEBSCARE ENTERPRISE"
+  },
+  {
+    name: "Dr. Zeeshan Tariq",
+    role: "Founder, HealthLink Tech",
+    text: "Delivered our telemedicine application ahead of schedule with immaculate code quality. Extremely professional, communicative, and detail-oriented.",
+    rating: 5,
+    tag: "HEALTHCARE PLATFORM"
+  }
+];
